@@ -1,0 +1,107 @@
+.profile-wrapper {
+  width: 1900px;
+}
+
+.topart-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: 285px;
+  justify-content: center;
+  .artists-card {
+    display: flex;
+    flex-direction: column;
+    padding: 27px;
+    // background: #ffffff;
+    border-radius: 5px;
+    margin: 0px 18px -20px 0px;
+    justify-content: center;
+    .wrap {
+      margin: 0 auto;
+      max-width: 400px;
+      position: relative;
+    }
+    .image {
+      display: block;
+      position: relative;
+      z-index: 2;
+    }
+    .shadow {
+      bottom: -15px;
+      filter: blur(20px); /* this is the magic part */
+      height: 100%;
+      left: 0;
+      position: absolute;
+      transform: scale(0.95);
+      width: 100%;
+      z-index: 1;
+    }
+
+    h5 {
+      font-weight: 400;
+      color: #a3a7b8;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+    }
+    img {
+      border-radius: 5px;
+      width: 247px;
+    }
+    a {
+      margin: 45px 0px 10px 0px;
+      text-transform: capitalize;
+      color: #01103e;
+      font-weight: 700;
+      opacity: 0.8;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        color: #a3a7b8;
+        transition: all 0.5s ease;
+        cursor: pointer;
+      }
+    }
+
+    .art-stats {
+      display: flex;
+      flex-direction: row;
+
+      .popular {
+        text-align: start;
+        margin-right: 20px;
+      }
+      .followers {
+        text-align: end;
+      }
+    }
+  }
+
+  .nav-wrapper {
+    padding: 40px 0px 20px 0px;
+    margin-left: 290px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: space-between;
+    margin-right: 30px;
+
+    h2 {
+      text-transform: capitalize;
+      color: #01103e;
+      font-weight: 800;
+    }
+    a {
+      color: #01103e;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover {
+        color: #a3a7b8;
+        transition: all 0.5s ease;
+        cursor: pointer;
+      }
+    }
+  }
+}

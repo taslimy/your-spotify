@@ -1,0 +1,106 @@
+.recent-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 285px;
+  justify-content: center;
+  .track-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    h4 {
+      text-transform: capitalize;
+      color: #01103e;
+      font-weight: 700;
+      opacity: 0.8;
+    }
+  }
+  .track {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    background: #ffffff;
+    width: 49%;
+    border-radius: 5px;
+    margin: 0px 10px 10px 0px;
+
+    .track-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      a {
+        font-size: 12px;
+        text-transform: capitalize;
+        font-weight: 400;
+        color: #ffffff;
+        background: #01103e; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #01103e,
+          #091949
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #11235a,
+          #142d7a
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        letter-spacing: 0.8px;
+        margin-top: 10px;
+
+        &:hover {
+          transition: all 0.5s ease;
+          cursor: pointer;
+          opacity: 0.8;
+        }
+      }
+
+      h6 {
+        font-weight: 500;
+        color: #a3a7b8;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+      }
+    }
+
+    img {
+      margin-right: 40px;
+      border-radius: 5px;
+      width: 100px;
+      position: relative;
+      z-index: 0;
+    }
+  }
+}
+
+.nav-wrapper {
+  padding: 40px 0px 20px 0px;
+  margin-left: 290px;
+  display: flex;
+  align-items: center;
+  width: auto;
+  justify-content: space-between;
+  margin-right: 30px;
+
+  h2 {
+    text-transform: capitalize;
+    color: #01103e;
+    font-weight: 800;
+  }
+  a {
+    color: #01103e;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #a3a7b8;
+      transition: all 0.5s ease;
+      cursor: pointer;
+    }
+  }
+}
