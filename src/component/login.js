@@ -1,14 +1,14 @@
 import React from "react";
 
-const login_url =
-  process.env.NODE_ENV !== "production"
-    ? "http://localhost:8888/login"
-    : "https://your-spotify.taslim.now.sh/login";
+import './login.styles.scss'
 
 const Login = () => {
   return (
-    <div>
-      <a href={login_url}>login to spotify to begin</a>
+    <div className="login-wrapper">
+      <a href="http://localhost:8888/login">login to spotify to begin</a>
+      {/* <a href="https://your-spotify.taslim.now.sh/login">
+        login to spotify to begin
+      </a> */}
     </div>
   );
 };
