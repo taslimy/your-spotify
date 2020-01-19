@@ -1,6 +1,6 @@
-<p align="center"><h2 align="center">Your Spotify - <a target="_blank" href="https://yourspotify.now.sh/">Demo</a>. </h2></p>
+<p align="center"><h2 align="center">Your Spotify Profile - <a target="_blank" href="https://yourspotify.now.sh/">Demo</a>. </h2></p>
 
-<p align="left">My Spotify Dashboard is a Full-Stack React application that leverages Spotify's API to display information about the user's listening habits. The user can find recently played tracks, top tracks, and top artists. The backend is using NodeJS and the frontend is using OAuth for authentication.</p>
+<p align="left">Your Spotify Profile is a Full-Stack React application that leverages Spotify's API to display information about the user's listening habits. The user can find recently played tracks, top tracks, and top artists. The backend is using NodeJS and the frontend is using OAuth for authentication.</p>
 
 ---
 
