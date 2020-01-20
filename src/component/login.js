@@ -5,10 +5,10 @@ import "./login.styles.scss";
 const Login = () => {
   return (
     <div className="login-wrapper">
-      {/* <a href="http://localhost:8888/login">login to spotify to begin</a> */}
       <a href="https://your-spotify.herokuapp.com/login">
         login to spotify to begin
       </a>
+      {/* <a href="http://localhost:8888/login">login to spotify to begin</a> */}
     </div>
   );
 };
