@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div className="login-wrapper">
       <a href="https://your-spotify.herokuapp.com/login">
-        login to spotify to begin
+        Login to your spotify
       </a>
       {/* <a href="http://localhost:8888/login">login to spotify to begin</a> */}
     </div>
