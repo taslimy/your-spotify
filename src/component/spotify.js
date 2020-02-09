@@ -69,7 +69,6 @@ export const getStorageToken = () => {
   ) {
     window.localStorage.clear();
     window.history.pushState(null, null, "/");
-    window.location.reload();
   }
 
   return storageToken;
