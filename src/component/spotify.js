@@ -19,7 +19,7 @@ const refreshToken = token =>
 
 const refreshAccessToken = async () => {
   try {
-    const { data } = await axios.get(`&?refresh_token=${refreshToken()}`);
+    const { data } = await axios.get(`&refresh_token==${refreshToken()}`);
     const { access_token } = data;
     accessToken(access_token);
     window.location.reload();
@@ -52,25 +52,23 @@ export const getStorageToken = () => {
   const storageToken = getToken();
   const storageRefreshToken = refreshToken();
 
-  // if (!storageToken || storageToken === "undefined") {
-  //   accessToken(access_token);
-  //   return access_token;
-  // }
-
-  // if (!storageRefreshToken || storageRefreshToken === "undefined") {
-  //   refreshToken(refresh_token);
-  // }
-
-  if (
-    !storageToken ||
-    storageToken ||
-    !storageRefreshToken ||
-    storageRefreshToken === "undefined"
-  ) {
-    window.localStorage.clear();
-    window.history.pushState(null, null, "/");
+  if (!storageToken || storageToken === "undefined") {
+    accessToken(access_token);
+    return access_token;
   }
 
+  if (!storageRefreshToken || storageRefreshToken === "undefined") {
+    refreshToken(refresh_token);
+  }
+
+  // if (
+  //   !storageToken ||
+  //   storageToken ||
+  //   !storageRefreshToken ||
+  //   storageRefreshToken === undefined
+  // ) {
+  //   window.localStorage.clear();
+  // }
   return storageToken;
 };
 
